@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: telegram-gold-bot
+    env: python
+    region: singapore # Closest to Cambodia for fast updates
+    buildCommand: pip install -r requirements.txt && python setup.py
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false # You will enter this securely on Render's dashboard
+      - key: PYTHON_VERSION
+        value: 3.10.0

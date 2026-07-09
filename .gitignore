@@ -1,0 +1,13 @@
+# Python / Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Output folder
+output/
+
+# macOS
+.DS_Store
